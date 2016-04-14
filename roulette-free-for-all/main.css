@@ -1,0 +1,114 @@
+#main-content {
+  background-color: #012928;
+  height: 100%;
+  width: 100%;
+}
+
+#info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  border: solid 5px black;
+  padding: 3vh;
+  width: 50%;
+  height: ;
+  margin-right: auto;
+  margin-left: auto;
+  background: #355554;
+  color: white;
+}
+.info-container {
+  display: none;
+}
+
+.pokemon {
+  border: solid 3px black;
+  width: 9vw;
+  height: 18vh;
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.pokemon .sprite {
+  text-align: center;
+  height: 75%;
+  width: 100%;
+}
+
+.pokemon img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 75%;
+  min-height: 75%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pokemon h2 {
+  max-height: 25%;
+  margin-top: 0px;
+  text-align: center;
+  bottom: 0px;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  color: black;
+  text-shadow:
+   -1px -1px #fff,
+    -1px 0px #fff,
+    0px -1px #fff,
+    1px -1px #fff,
+    -1px 1px #fff,
+    1px 0px #fff,
+    0px 1px #fff,
+     1px 1px #fff;
+}
+
+.slot-line {
+  width: 100%;
+  height: 100%;
+}
+
+.slot-tile {
+  width: 100%;
+  height: 100%;
+}
+
+.party {
+  position: absolute;
+}
+
+#party1 {
+  top: 0;
+  left: 0;
+}
+#party1 .pokemon {
+  background: #C61111;
+}
+
+#party2 {
+  top: 0;
+  right: 0;
+}
+#party2 .pokemon {
+  background: #35A323;
+}
+
+#party3 {
+  bottom: 0;
+  left: 0;
+}
+#party3 .pokemon {
+  background: #1F95DF;
+}
+
+#party4 {
+  bottom: 0;
+  right: 0;
+}
+#party4 .pokemon {
+  background: #E3D60F;
+}
