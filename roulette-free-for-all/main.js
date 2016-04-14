@@ -7,18 +7,20 @@ function rand(min, max) {
 }
 
 var pokemonList = localStorage.getItem("pokemonList");
+var corrections = {122: "Mr. Mime", 386: "Deoxys", 413: "Wormadam", 439: "Mime Jr.", 487: "Giratina", 492: "Shaymin", 550: "Basculin", 555: "Darmanitan", 641: "Tornadus", 642: "Thundurus", 645: "Landorus", 647: "Keldeo", 648: "Meloetta", 678: "Meowstic", 681: "Aegislash", 710: "Pumpkaboo", 711: "Gourgeist"};
 if (!pokemonList) {
   $.getJSON("http://pokeapi.co/api/v2/pokemon/?limit=721&callback=").success(function (data) {
     window.pokemonList = data;
+    for (var i in corrections) {
+      pokemonList.results[i - 1].name = corrections[i];
+    }
     localStorage.setItem("pokemonList", JSON.stringify(data));
   });
 } else {
   pokemonList = JSON.parse(pokemonList);
-}
-
-var corrections = {122: "Mr. Mime", 386: "Deoxys", 413: "Wormadam", 439: "Mime Jr.", 487: "Giratina", 492: "Shaymin", 550: "Basculin", 555: "Darmanitan", 641: "Tornadus", 642: "Thundurus", 645: "Landorus", 647: "Keldeo", 648: "Meloetta", 678: "Meowstic", 681: "Aegislash", 710: "Pumpkaboo", 711: "Gourgeist"};
-for (var i in corrections) {
-  pokemonList.results[i - 1].name = corrections[i];
+  for (var i in corrections) {
+    pokemonList.results[i - 1].name = corrections[i];
+  }
 }
 
 function getRandMon() {
