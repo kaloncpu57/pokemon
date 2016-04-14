@@ -84,6 +84,6 @@ $(function () {
 
   //Notify mobile users about possible issues
   if (screen.height < 650 || screen.width < 650) {
-    alert("Mobile users,\nI hope to better support mobile devices in the future, but for now you may experience some issues with the layout and the app will probably run slow.\nIf you would like to get the best experience, please consider opening this up on a desktop browser.");
+    alert("Mobile users (or users with small screens),\nI hope to better support mobile devices in the future, but for now you may experience some issues with the layout and the app will probably run slow.\nIf you would like to get the best experience, please consider opening this up on a desktop browser.");
   }
 });
