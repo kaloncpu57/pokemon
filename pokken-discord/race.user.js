@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         $race Tier List
 // @namespace    https://github.com/kaloncpu57
-// @version      0.0.1
+// @version      0.0.2
 // @description  Add $race game to tier list maker
 // @updateURL    https://kaloncpu57.github.io/pokemon/pokken-discord/race.user.js
 // @author       kaloncpu57
@@ -23,6 +23,7 @@ function race() {
       $(this).remove();
     }
   });
+  $("#controls").find("span").text("$race")
 }
 
 var raceBtn = $("<button id='switchRace'>$race</button>").click(race);
