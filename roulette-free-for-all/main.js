@@ -36,7 +36,7 @@ function getRandMon() {
   var pokemon = {
     name: choice.name.capitalize(),
     url: choice.url,
-    sprite: "http://pokeapi.co/media/sprites/pokemon/" + x + ".png"
+    sprite: "//kaloncpu57.github.io/pokemon/sprites" + x + ".png"
   };
 
   return pokemon;
