@@ -35,6 +35,13 @@
             <h3 class="text-center">Opera</h3>
           </div>
         </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-5"></div>
+          <div id="mobileLogo" class="col-sm-2 logo">
+            <h3 class="text-center">Mobile</h3>
+          </div>
+        </div>
       </div>
       <div id="chrome" class="instructions">
         <button class="paper-btn back">Back</button>
@@ -168,6 +175,31 @@
             <br/>
             <p>Change the game and you're ready to go.</p>
             <img class="raw-img" src="resources/change-game.png" />
+          </div>
+        </div>
+      </div>
+      <div id="mobile" class="instructions">
+        <button class="paper-btn back">Back</button>
+        <div class="row">
+          <h1 class="text-center">Mobile</h1>
+        </div>
+        <div class="row">
+          <div id="mobile1" class="slide">
+            <h3>Bookmark this link:</h3>
+            <a class="paper-link" href="javascript:(function()%7Bfunction%20gameChanger(a)%7BcurrentGameChars%3D%5B%5D%3BcurrentGameChars%3Da%3BcurrentGame%3Da%5B0%5D%3Bvar%20c%3D%22.png%22%3B%22%24race%22%3D%3DcurrentGame%26%26(c%3D%22.svg%22)%3B%24(%22.character%22).each(function()%7B%24(this).remove()%7D)%3Bfor(var%20b%3D1%3Bb%3Ca.length%3Bb%2B%2B)%24(%22%23char%20div%3Alast-child%22).after(singleChar)%2C%24(%22%23char%20div%3Alast-child%22).css(%7B%22background-image%22%3A%22url(https%3A%2F%2Fkaloncpu57.github.io%2Fpokemon%2Fpokken-discord%2Fcharacters%2F%22%2Ba%5Bb%5D%2Bc%2C%22background-size%22%3A%22100%25%20100%25%22%7D)%2C%24(%22%23char%20div%3Alast-child%22).attr(%22id%22%2Cb)%3B%24(%22h1%20span%22).text(currentGame)%3BupdateTiers()%7Dvar%20race%3D%22%24race%20dolphin%20koala%20bear%20crab%20penguin%20beetle%20panda%20unicorn%22.split(%22%20%22)%2Cpokken%3D%22Pokk%5Cu00e9n%20pikachu-libre%20machamp%20lucario%20gengar%20gardevoir%20garchomp%20charizard%20shadow-mewtwo%20chandelure%20braixen%20blaziken%20mewtwo%20pikachu%20weavile%20sceptile%20suicune%22.split(%22%20%22)%3B%24(%22%23switchButtons%22).append(%24(%22%3Chr%2F%3E%22))%3Bvar%20raceBtn%3D%24(%22%3Cbutton%20id%3D'switchRace'%3E%24race%3C%2Fbutton%3E%22).click(function()%7BgameChanger(race)%7D)%3B%24(%22%23switchButtons%22).append(raceBtn)%3B%24(%22%23switchButtons%20button%3Alast-child%22).after(%22%20%22)%3Bvar%20pokkenBtn%3D%24(%22%3Cbutton%20id%3D'switchPokken'%3EPokk%26%23233%3Bn%20Tournament%3C%2Fbutton%3E%22).click(function()%7BgameChanger(pokken)%7D)%3B%24(%22%23switchButtons%22).append(pokkenBtn)%3B%24(window).unload(function()%7Bvar%20a%3DlocalStorage.getItem(%22TierListMakerCode%22).split(%22%3D%3D%22)%5B0%5D%3B-1!%3D%5B%22%24race%22%2C%22Pokk%5Cu00e9n%22%5D.indexOf(a)%26%26localStorage.removeItem(%22TierListMakerCode%22)%7D)%7D)()">
+              <span>Tier List Extension</span>
+            </a>
+            <br/>
+            <button class="paper-btn next" data-index="mobile1" data-next="mobile2">Next</button>
+          </div>
+          <div id="mobile2" class="slide">
+            <h3>Go to the Tier List Maker</h3>
+            <a class="paper-link" href="https://quetzle.github.io/smash-apps/tier/" target="_blank">
+              <img src="https://quetzle.github.io/smash-apps/icon.png" />
+              <span>Tier List Maker</span>
+            </a>
+            <br/>
+            <p>When you are on the Tier List Maker page, click the link you have bookmarked to run the extension. You must click the bookmark each time you visit or refresh the Tier List Maker page.</p>
           </div>
         </div>
       </div>

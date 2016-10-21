@@ -20,6 +20,13 @@ $(function () {
     });
   });
 
+  $("#mobileLogo").click(function () {
+    $("#browserSelect").fadeOut(250, function () {
+      $("#mobile1").show();
+      $("#mobile").fadeIn();
+    });
+  });
+
   $(".back").click(function () {
     $(".instructions:visible").fadeOut(250, function () {
       $(".slide").hide();
