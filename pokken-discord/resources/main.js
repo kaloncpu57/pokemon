@@ -22,6 +22,7 @@ $(function () {
 
   $(".back").click(function () {
     $(".instructions:visible").fadeOut(250, function () {
+      $(".slide").hide();
       $("#browserSelect").fadeIn();
     });
   });
