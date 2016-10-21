@@ -1,0 +1,177 @@
+<html>
+<head>
+  <title>$race Tier List Maker</title>
+  <link id="favicon" rel="shortcut icon" type="image/svg+xml" href="../characters/dolphin.svg" sizes="any" />
+  <link rel="stylesheet" href="resources/bootstrap.min.css" />
+  <link rel="stylesheet" href="resources/bootstrap-dialog.min.css" />
+  <link rel="stylesheet" href="resources/main.css" />
+  <script src="resources/jquery.min.js"></script>
+  <script src="resources/bootstrap.min.js"></script>
+  <script src="resources/bootstrap-dialog.min.js"></script>
+  <script src="resources/main.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron" id="main">
+      <div id="browserSelect">
+        <div class="row">
+          <h2 class="text-center">Please select your browser</h2>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div id="chromeLogo" class="col-sm-2 logo">
+            <img src="resources/chrome.png" />
+            <h3 class="text-center">Chrome</h3>
+          </div>
+          <div class="col-sm-1"></div>
+          <div id="firefoxLogo" class="col-sm-2 logo">
+            <img src="resources/firefox.png" />
+            <h3 class="text-center">Firefox</h3>
+          </div>
+          <div class="col-sm-1"></div>
+          <div id="operaLogo" class="col-sm-2 logo">
+            <img src="resources/opera.png" />
+            <h3 class="text-center">Opera</h3>
+          </div>
+        </div>
+      </div>
+      <div id="chrome" class="instructions">
+        <button class="paper-btn back">Back</button>
+        <div class="row">
+          <h1 class="text-center">
+            <img src="resources/chrome.png" />Chrome
+          </h1>
+        </div>
+        <div class="row">
+          <div id="chrome1" class="slide">
+            <h3>Install the Tampermonkey extension.</h3>
+            <a class="paper-link" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">
+              <img src="resources/tampermonkey.png" />
+              <span>Tampermonkey Extension</span>
+            </a>
+            <br/>
+            <p>The Tampermonkey icon should appear in your Chrome menu.</p>
+            <img class="raw-img" src="resources/tampermonkey-icon.png" />
+            <br/>
+            <button class="paper-btn next" data-index="chrome1" data-next="chrome2">Next</button>
+          </div>
+          <div id="chrome2" class="slide">
+            <h3>Install the script with Tampermonkey.</h3>
+            <p>This adds the $race game to the Tier List Maker.</p>
+            <a class="paper-link" href="https://kaloncpu57.github.io/pokemon/pokken-discord/race.user.js">
+              <img src="resources/tampermonkey.png" />
+              <span>Tampermonkey Script</span>
+            </a>
+            <br/>
+            <p>Click the Install button on the page that appears.</p>
+            <img class="raw-img" src="resources/script-install.png" />
+            <br/>
+            <button class="paper-btn next" data-index="chrome2" data-next="chrome3">Next</button>
+          </div>
+          <div id="chrome3" class="slide">
+            <h3>Go to the Tier List Maker</h3>
+            <a class="paper-link" href="https://quetzle.github.io/smash-apps/tier/" target="_blank">
+              <img src="https://quetzle.github.io/smash-apps/icon.png" />
+              <span>Tier List Maker</span>
+            </a>
+            <br/>
+            <p>Change the game to $race and you're ready to go.</p>
+            <img class="raw-img" src="resources/change-game.png" />
+          </div>
+        </div>
+      </div>
+      <div id="firefox" class="instructions">
+        <button class="paper-btn back">Back</button>
+        <div class="row">
+          <h1 class="text-center">
+            <img src="resources/firefox.png" />Firefox
+          </h1>
+        </div>
+        <div class="row">
+          <div id="firefox1" class="slide">
+            <h3>Install the Greasemonkey add-on.</h3>
+            <a class="paper-link" href="https://addons.mozilla.org/en-Us/firefox/addon/greasemonkey/" target="_blank">
+              <img src="resources/greasemonkey.png" />
+              <span>Greasemonkey Add-On</span>
+            </a>
+            <br/>
+            <p>The Greasemonkey icon should appear in your Firefox toolbar.</p>
+            <img class="raw-img" src="resources/greasemonkey-icon.png" />
+            <br/>
+            <button class="paper-btn next" data-index="firefox1" data-next="firefox2">Next</button>
+          </div>
+          <div id="firefox2" class="slide">
+            <h3>Install the script with Greasemonkey.</h3>
+            <p>This adds the $race game to the Tier List Maker.</p>
+            <a class="paper-link" href="https://kaloncpu57.github.io/pokemon/pokken-discord/race.user.js">
+              <img src="resources/greasemonkey.png" />
+              <span>Greasemonkey Script</span>
+            </a>
+            <br/>
+            <p>Click the Install button on the page that appears.</p>
+            <img class="raw-img" src="resources/script-install-ff.png" />
+            <br/>
+            <button class="paper-btn next" data-index="firefox2" data-next="firefox3">Next</button>
+          </div>
+          <div id="firefox3" class="slide">
+            <h3>Go to the Tier List Maker</h3>
+            <a class="paper-link" href="https://quetzle.github.io/smash-apps/tier/" target="_blank">
+              <img src="https://quetzle.github.io/smash-apps/icon.png" />
+              <span>Tier List Maker</span>
+            </a>
+            <br/>
+            <p>Change the game to $race and you're ready to go.</p>
+            <img class="raw-img" src="resources/change-game.png" />
+          </div>
+        </div>
+      </div>
+      <div id="opera" class="instructions">
+        <button class="paper-btn back">Back</button>
+        <div class="row">
+          <h1 class="text-center">
+            <img src="resources/opera.png" />Opera
+          </h1>
+        </div>
+        <div class="row">
+          <div id="opera1" class="slide">
+            <h3>Install the Tampermonkey extension.</h3>
+            <a class="paper-link" href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/" target="_blank">
+              <img src="resources/tampermonkey.png" />
+              <span>Tampermonkey Extension</span>
+            </a>
+            <br/>
+            <p>The Tampermonkey icon should appear in your Opera toolbar.</p>
+            <img class="raw-img" src="resources/tampermonkey-o-icon.png" />
+            <br/>
+            <button class="paper-btn next" data-index="opera1" data-next="opera2">Next</button>
+          </div>
+          <div id="opera2" class="slide">
+            <h3>Install the script with Tampermonkey.</h3>
+            <p>This adds the $race game to the Tier List Maker.</p>
+            <a class="paper-link" href="https://kaloncpu57.github.io/pokemon/pokken-discord/race.user.js">
+              <img src="resources/tampermonkey.png" />
+              <span>Tampermonkey Script</span>
+            </a>
+            <br/>
+            <p>Click the Install button on the page that appears.</p>
+            <img class="raw-img" src="resources/script-install.png" />
+            <br/>
+            <button class="paper-btn next" data-index="opera2" data-next="opera3">Next</button>
+          </div>
+          <div id="opera3" class="slide">
+            <h3>Go to the Tier List Maker</h3>
+            <a class="paper-link" href="https://quetzle.github.io/smash-apps/tier/" target="_blank">
+              <img src="https://quetzle.github.io/smash-apps/icon.png" />
+              <span>Tier List Maker</span>
+            </a>
+            <br/>
+            <p>Change the game to $race and you're ready to go.</p>
+            <img class="raw-img" src="resources/change-game.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

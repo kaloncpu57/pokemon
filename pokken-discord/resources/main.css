@@ -1,0 +1,94 @@
+body {
+  background: #0e0e0e;
+  color: white;
+}
+
+.container-fluid {
+  height: 75%;
+  margin: 30px;
+}
+
+.jumbotron {
+  background: #142a35;
+}
+
+.logo {
+  padding: 5px;
+  border-radius: 25px;
+  transform-style: flat;
+  transition: all 250ms ease-out;
+}
+.logo:hover {
+  outline: 3px;
+  background: #1c7a84;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.logo>img {
+  width: 100%;
+}
+
+h1>img {
+  height: 66px;
+  vertical-align: bottom;
+}
+
+.instructions, .slide {
+  display: none;
+}
+
+.paper-btn {
+  color: white;
+  font-size: 20px;
+  background: #3d5d9e;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  transform-style: flat;
+  transition: all 250ms ease-out;
+}
+.paper-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.paper-btn:active, .paper-btn:focus {
+  outline: none;
+}
+
+.next {
+  background: #36a58b;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paper-link {
+  background: #a5aab3;
+  font-size: 25px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 25px;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  margin: 10px;
+  margin-left: 50px;
+  transform-style: flat;
+  transition: all 250ms ease-out;
+}
+.paper-link:hover {
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+.paper-link:hover, .paper-link:focus {
+  text-decoration: none;
+  color: black;
+}
+.paper-link>img {
+  height: 100px;
+}
+.paper-link>span {
+  text-decoration: underline;
+}
+
+.raw-img {
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+}
