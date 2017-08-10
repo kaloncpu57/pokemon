@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Extra Tier Lists
 // @namespace    https://github.com/kaloncpu57
-// @version      0.2.0
+// @version      0.2.1
 // @description  Add extra games to tier list maker
 // @updateURL    https://kaloncpu57.github.io/pokemon/pokken-discord/tiers.user.js
 // @author       kaloncpu57
