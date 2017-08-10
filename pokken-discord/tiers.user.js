@@ -22,7 +22,7 @@ function gameChanger(game) {
   });
   for (var i = 1; i < game.length; i++) {
     $("#char div:last-child").after(singleChar);
-    $("#char div:last-child").css({"background-image": "url(https://kaloncpu57.github.io/pokemon/pokken-discord/characters/" + game[i] + ext, "background-size": "100% 100%"});
+    $("#char div:last-child").css({"background-image": "url(https://kaloncpu57.github.io/pokemon/pokken-discord/characters/" + game[i] + "-dx" + ext, "background-size": "100% 100%"});
     $("#char div:last-child").attr("id", i);
   }
   $("h1 span").text(currentGame);
@@ -30,7 +30,7 @@ function gameChanger(game) {
 }
 
 var race = ["$race", "dolphin", "koala", "bear", "crab", "penguin", "beetle", "panda", "unicorn"];
-var pokken = ["Pokkén", "pikachu-libre", "machamp", "lucario", "gengar", "gardevoir", "garchomp", "charizard", "shadow-mewtwo", "chandelure", "braixen", "blaziken", "mewtwo", "pikachu", "weavile", "sceptile", "suicune"];
+var pokken = ["Pokkén", "pikachu-libre", "machamp", "lucario", "gengar", "gardevoir", "garchomp", "charizard", "shadow-mewtwo", "chandelure", "braixen", "blaziken", "mewtwo", "pikachu", "weavile", "sceptile", "suicune", "scizor", "darkrai", "empoleon", "croagunk", "decidueye"];
 
 $("#switchButtons").append($("<hr/>"));
 var raceBtn = $("<button id='switchRace'>$race</button>").click(function () {
