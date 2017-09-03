@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Extra Tier Lists
 // @namespace    https://github.com/kaloncpu57
-// @version      0.2.1
+// @version      0.5.0
 // @description  Add extra games to tier list maker
 // @updateURL    https://kaloncpu57.github.io/pokemon/pokken-discord/tiers.user.js
 // @author       kaloncpu57
@@ -22,7 +22,7 @@ function gameChanger(game) {
   });
   for (var i = 1; i < game.length; i++) {
     $("#char div:last-child").after(singleChar);
-    $("#char div:last-child").css({"background-image": "url(https://kaloncpu57.github.io/pokemon/pokken-discord/characters/" + game[i] + "-dx" + ext, "background-size": "100% 100%"});
+    $("#char div:last-child").css({"background-image": "url(https://kaloncpu57.github.io/pokemon/pokken-discord/characters/" + game[i] + (currentGame == "Pokkén" ? "-dx" : "") + ext, "background-size": "100% 100%"});
     $("#char div:last-child").attr("id", i);
   }
   $("h1 span").text(currentGame);
@@ -30,7 +30,7 @@ function gameChanger(game) {
 }
 
 var race = ["$race", "dolphin", "koala", "bear", "crab", "penguin", "beetle", "panda", "unicorn"];
-var pokken = ["Pokkén", "pikachu-libre", "machamp", "lucario", "gengar", "gardevoir", "garchomp", "charizard", "shadow-mewtwo", "chandelure", "braixen", "blaziken", "mewtwo", "pikachu", "weavile", "sceptile", "suicune", "scizor", "darkrai", "empoleon", "croagunk", "decidueye"];
+var pokken = ["Pokkén", "darkrai", "blaziken", "pikachu", "lucario", "gardevoir", "pikachu-libre", "scizor", "croagunk", "sceptile", "gengar", "decidueye", "machamp", "braixen", "empoleon", "mewtwo", "chandelure", "suicune", "weavile", "charizard", "garchomp", "shadow-mewtwo", "litten", "popplio", "emolga", "fennekin", "snivy", "lapras", "frogadier", "eevee", "mismagius", "ninetales", "jirachi", "whimsicott", "croagunk-support", "sylveon", "farfetchd", "electrode", "pachirisu", "magikarp", "cubone", "diglett", "magneton", "quagsire", "espeon", "umbreon", "rotom", "togekiss", "dragonite", "victini", "reshiram", "cresselia", "yveltal", "latios"];
 
 $("#switchButtons").append($("<hr/>"));
 var raceBtn = $("<button id='switchRace'>$race</button>").click(function () {
