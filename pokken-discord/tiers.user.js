@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Extra Tier Lists
 // @namespace    https://github.com/kaloncpu57
-// @version      0.5.2
+// @version      0.5.3
 // @description  Add extra games to tier list maker
 // @updateURL    https://kaloncpu57.github.io/pokemon/pokken-discord/tiers.user.js
 // @author       kaloncpu57
@@ -30,7 +30,7 @@ function gameChanger(game) {
 }
 
 var race = ["$race", "dolphin", "koala", "bear", "crab", "penguin", "beetle", "panda", "unicorn"];
-var pokken = ["Pokkén", "aegislash", "darkrai", "blaziken", "pikachu", "lucario", "gardevoir", "pikachu-libre", "scizor", "croagunk", "sceptile", "gengar", "decidueye", "machamp", "braixen", "empoleon", "mewtwo", "chandelure", "suicune", "weavile", "charizard", "garchomp", "shadow-mewtwo", "mega-rayquaza", "mimikyu", "litten", "popplio", "emolga", "fennekin", "snivy", "lapras", "frogadier", "eevee", "mismagius", "ninetales", "jirachi", "whimsicott", "croagunk-support", "sylveon", "farfetchd", "electrode", "pachirisu", "magikarp", "cubone", "diglett", "magneton", "quagsire", "espeon", "umbreon", "rotom", "togekiss", "dragonite", "victini", "reshiram", "cresselia", "yveltal", "latios"];
+var pokken = ["Pokkén", "aegislash", "blastoise", "darkrai", "blaziken", "pikachu", "lucario", "gardevoir", "pikachu-libre", "scizor", "croagunk", "sceptile", "gengar", "decidueye", "machamp", "braixen", "empoleon", "mewtwo", "chandelure", "suicune", "weavile", "charizard", "garchomp", "shadow-mewtwo", "mew", "celebi", "mega-rayquaza", "mimikyu", "litten", "popplio", "emolga", "fennekin", "snivy", "lapras", "frogadier", "eevee", "mismagius", "ninetales", "jirachi", "whimsicott", "croagunk-support", "sylveon", "farfetchd", "electrode", "pachirisu", "magikarp", "cubone", "diglett", "magneton", "quagsire", "espeon", "umbreon", "rotom", "togekiss", "dragonite", "victini", "reshiram", "cresselia", "yveltal", "latios"];
 
 $("#switchButtons").append($("<hr/>"));
 var raceBtn = $("<button id='switchRace'>$race</button>").click(function () {
