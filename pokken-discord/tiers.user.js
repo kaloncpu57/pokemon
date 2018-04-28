@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Extra Tier Lists
 // @namespace    https://github.com/kaloncpu57
-// @version      0.5.3
+// @version      0.5.4
 // @description  Add extra games to tier list maker
 // @updateURL    https://kaloncpu57.github.io/pokemon/pokken-discord/tiers.user.js
 // @author       kaloncpu57
@@ -42,6 +42,8 @@ var pokkenBtn = $("<button id='switchPokken'>Pokk&#233;n Tournament</button>").c
   gameChanger(pokken);
 });
 $("#switchButtons").append(pokkenBtn);
+
+gameChanger(pokken);
 
 $(window).unload(function () {
   var customGames = ["$race", "Pokkén"];
